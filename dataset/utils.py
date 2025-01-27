@@ -90,7 +90,12 @@ def get_research_domain(categories):
         "econ": "Economics",
         "q-fin": "Quantitative Finance"
     }
+    ai_categories = {"cs.AI", "cs.LG", "cs.CV", "cs.CL", "cs.NE", "cs.RO"}
     primary_category = categories[0] if categories else "unknown"
+    
+    if primary_category in ai_categories:
+        return "Artificial Intelligence"
+    
     main_domain = primary_category.split(".")[0]
     return domain_mapping.get(main_domain, "Other")
 
