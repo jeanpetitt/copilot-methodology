@@ -1,1 +1,1 @@
-# Research-copilot: Research Methodology
+# Copilot: Research Methodology
