@@ -34,7 +34,9 @@ annotions  is look like this:
 ```
 
 ### Run Project
-If you want to run the project locally and to see the output pdf file generate, please assure you that you have pdflatex install in you computer, if this is not the case please follow these instruction: <br>
+If you want to run the project locally and view the generated PDF file, please ensure that pdflatex is installed on your computer.
+
+If it is not installed, please follow these instructions: <br>
 
 On MacOs device:
 ```sh
@@ -46,10 +48,9 @@ sudo apt update
 sudo apt install texlive-latex-base texlive-latex-extra texlive-fonts-recommended
 
 ```
+If you are using Windows as your operating system, please look up how to install MiKTeX on your device.
 
-If you are using Windows as OS, please search on how to install MilTex in your device.<br>
-
-Once this is done, run this command in the root of your project
+Once installed, run the following command in the root of your project <br>
 
 ```sh
 python main.py
