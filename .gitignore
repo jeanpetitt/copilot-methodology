@@ -19,3 +19,5 @@ llm
 
 # Others
 patricia*
+*.aux
+*.log
