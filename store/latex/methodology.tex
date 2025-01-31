@@ -11,37 +11,34 @@
 
 \section{Methodology}
 
-This section discusses the methodology employed in addressing the research question: \textit{How can the GPT model be leveraged for semantic table annotation?} The methodology utilized is quantitative, supported by statistical analysis and hypothesis testing. The study is set within the domains of Artificial Intelligence, Data Science, Natural Language Processing, Machine Learning, and Information Retrieval.
+\subsection{Research Question and Domain}
+This study addresses the research question: \textit{``How to leverage a GPT model for semantic table annotation?''}. Situated at the intersection of several cutting-edge domains, the research draws from Natural Language Processing, Machine Learning, Data Science, Artificial Intelligence, and Information Retrieval. The process entails developing methods for enhancing semantic understanding in table annotation tasks.
 
-\subsection{Research Design}
+\subsection{Research Type}
+The study adopts a quantitative research approach. This involves the application of statistical analyses alongside hypothesis testing to evaluate the effectiveness of different GPT model configurations in improving semantic table annotation tasks.
 
-A quantitative approach is adopted to systematically evaluate the effectiveness of the GPT model for semantic table annotation through a rigorous framework of statistical analysis. This approach facilitates the objective measurement of outcomes and supports the derivation of conclusions based on empirical data.
+\subsection{Methods}
+The investigation centers on two primary methods to utilize the GPT model: prompting techniques and fine-tuning. Within the scope of prompting techniques, we explore:
+- \textit{Few-shot prompting}: Here, a limited number of annotated examples are provided to the model to enhance its predictive capability in table annotation tasks.
+- \textit{Zero-shot prompting}: This scenario evaluates the model's innate ability to perform semantic table annotation without prior exposure to labeled examples.
+
+In addition, fine-tuning the GPT-3 model is conducted to optimize its performance specifically for our tasks, integrating domain-specific data to tailor its understanding and predictive capability.
 
 \subsection{Participants}
-
-The study does not involve specific human participants but rather experimental data in the form of datasets that were subjected to analysis. This data-driven approach enables clear measurement and assessment of the research variables.
+The research involves various experimental setups to test the model's capabilities under the defined methods. There are no human participants; instead, the model itself undergoes experimental tuning and testing.
 
 \subsection{Tools and Datasets}
+Several tools and datasets are employed in this research, including:
 
-The primary tools for this research include various computational frameworks used for conducting experiments. The evaluation metrics employed to assess the performance of the GPT model include precision, recall, and F1-score, providing a comprehensive assessment of the model's accuracy and effectiveness.
+\begin{itemize}
+    \item \textbf{Metrics}: To quantify the model's performance, we use precision, recall, and F1-score.
+    \item \textbf{Datasets}: The primary dataset used is SuperSemTab2024. This dataset offers a comprehensive benchmark for evaluating semantic table annotation tasks.
+    \item \textbf{Tasks}: Our evaluations are structured around several task components: Column Entity Annotation (CEA), Column Type Annotation (CTA), Column Property Annotation (CPA), Raw Annotation (RA), and Table Topic Detection (TD).
+\end{itemize}
 
-The dataset utilized in this research is the \textbf{superSemtab2024} dataset, which is an established dataset in the domain of semantic table annotation. This dataset provides a robust framework for evaluating the potential of GPT models in this context.
+\subsection{Procedures}
+The methodologies are applied without a specific procedural timeline as the research is exploratory within its quantitative framework. The initial phases involve model configuration and iterative testing, using benchmarks from SuperSemTab2024 to calibrate the model's performance metrics, continuous assessment with emphasis on precision, recall, and F1-score, followed by analytical comparison of few-shot and zero-shot prompting outcomes. Fine-tuning iterations are based on performance insights derived from these evaluations.
 
-\subsection{Experimental Procedures}
-
-\subsubsection{Data Preparation}
-To prepare the dataset for experimentation, preprocessing steps were applied, including data cleaning and normalization to ensure consistency and accuracy throughout the experiments. This step involved removing any irrelevant or redundant data that could bias the results.
-
-\subsubsection{Model Deployment}
-The GPT model was deployed in a controlled experimental setting where its capacity to perform semantic table annotation was rigorously tested. This involved feeding the preprocessed datasets into the model and obtaining the resultant annotations for analysis.
-
-\subsubsection{Evaluation Metric Calculation}
-For each experimental run, precise computation of the precision, recall, and F1-score metrics was performed to evaluate the model's predictive performance. These metrics provided insight into the specific strengths and weaknesses of the model in correctly and efficiently annotating semantic data tables.
-
-\subsection{Statistical Analysis}
-
-Statistical analysis was conducted to test the null hypothesis that the GPT model would not significantly improve semantic table annotation compared to baseline methods. This involved utilizing hypothesis testing frameworks to analyze the performance metrics obtained from different experimental runs. Statistical significance was determined based on the p-values calculated in relation to established significance thresholds.
-
-This methodology section outlines the detailed process and analytical strategies employed to address the research question, providing a solid foundation for the subsequent results and discussion sections of the paper.
+This methodology, therefore, allows for an empirical examination of the capabilities of GPT models in the semantic annotation of tables, offering insights into optimizing these models for enhanced information retrieval and processing.
 
 \end{document}

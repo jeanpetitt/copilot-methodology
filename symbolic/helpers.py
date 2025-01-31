@@ -30,7 +30,7 @@ class SymbolicModel:
     def generate_structure(self):
         """Generate the structure of methodology based on annotations."""
         self.structure["research_question"] = self.research_question
-        self.structure["domain"] = self.domain
+        self.structure["research_domain"] = self.domain
 
         # Define type of research
         research_type = self.annotations["research_type"]
@@ -40,7 +40,8 @@ class SymbolicModel:
             raise ValueError("Invalid research type. Must be one of: qualitative, quantitative, or mixed.")
 
         # Add method used
-        self.structure["Methods"] = self._define_methods(research_type)
+        if "method" in self.annotations:       
+            self.structure["Methods"] = self._define_methods(research_type) + str(self.annotations['method'])
 
         # Add participants
         self.structure["Participants"] = self.annotations["participant"]
@@ -85,18 +86,3 @@ class SymbolicModel:
         else:
             return "General Research"
 
-# Example of use case
-data = {
-    "research_question": "How do AI models assist in research methodology generation?",
-    "domain": "",  # Domain is missing; it will be inferred
-    "annotations": {
-        "research_type": "mixed",
-        "method": "qualitative",
-        "participant": "Researchers and AI experts",
-        "tools": ["survey", "interview"]
-    }
-}
-
-model = SymbolicModel(data["research_question"], data["domain"], data["annotations"])
-structure = model.generate_structure()
-print(structure)
