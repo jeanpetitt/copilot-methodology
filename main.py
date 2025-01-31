@@ -2,7 +2,7 @@ from symbolic.helpers import SymbolicModel
 from llm.openai_recipe.utils import generate_methodology_section
 
 data = {
-    "research_question": "How do AI models assist in research methodology generation?",
+    "research_question": "How Levrage GPT Model for semantic table annotation",
     "domain": "",  # Domain is missing; it will be inferred
     "annotations": {
         "research_type": "mixed",
