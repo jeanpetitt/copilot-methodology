@@ -10,4 +10,12 @@ venv
 .env
 
 # documents
+dataset
 downloads
+agent
+fintuning
+inference
+llm
+
+# Others
+patricia*
