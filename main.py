@@ -6,10 +6,10 @@ data = {
     "research_question": "How Levrage GPT Model for semantic table annotation",
     "domain": "",  # Domain is missing; it will be inferred
     "annotations": {
-        "research_type": "mixed",
-        "method": "qualitative",
-        "participant": "Researchers and AI experts",
-        "tools": ["survey", "interview"]
+        "research_type": "quantitative",
+        "method": "few-shot, zero-shot prompting and finetuning",
+        "participant": "experimentions",
+        "tools": ["Experimention", {"metrics": "precision, Recall and F1-score", "datasets": "superSemtab2024"}]
     }
 }
 

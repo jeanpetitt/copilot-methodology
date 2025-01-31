@@ -18,7 +18,6 @@ class LaTeXGenerator:
 \\begin{{document}}
 \\maketitle
 
-\\section*{{Methodology}}
 {methodology_text}
 
 \\end{{document}}
